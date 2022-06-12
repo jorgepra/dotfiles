@@ -1,0 +1,2223 @@
+!SESSION 2022-06-04 19:55:17.736 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_PE
+Command-line arguments:  -data /Users/thordog/.config/coc/extensions/coc-java-data/jdt_ws_093eabef2e635965c82ad4986f829e16
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:18.924
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.065
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.105
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.106
+!MESSAGE Initializing Java Language Server 1.13.0.202206011832
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.219
+!MESSAGE Default VM Install changed from  null to 1654390519209-/Users/thordog/.sdkman/candidates/java/11.0.2-open
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.243
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.244
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.248
+!MESSAGE Wait for AutoBuildOffJob start
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.260
+!MESSAGE Wait for AutoBuildOffJob end 12ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.261
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.262
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.264
+!MESSAGE ProjectRegistryRefreshJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.264
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.292
+!MESSAGE Started org.eclipse.buildship.core 27ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.293
+!MESSAGE LoadingGradleVersionJob finished 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.306
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.320
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.366
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:55:19.912
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.036
+!MESSAGE Workspace initialized in 42742ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.176
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.179
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.189
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=true}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.191
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.534
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.834
+!MESSAGE begin problem for /Parrot.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.835
+!MESSAGE 0 problems reported for /Parrot.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.838
+!MESSAGE Validated 1. Took 293 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.858
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.876
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.879
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:02.881
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:07.360
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:07.368
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:07.369
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:07.370
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:56:07.371
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:57:48.801
+!MESSAGE >> document/didClose
+!SESSION 2022-06-04 19:58:23.057 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_PE
+Command-line arguments:  -data /Users/thordog/.config/coc/extensions/coc-java-data/jdt_ws_093eabef2e635965c82ad4986f829e16
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-06-04 19:58:23.892
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.373
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.521
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.559
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.560
+!MESSAGE Initializing Java Language Server 1.13.0.202206011832
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.581
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.582
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.587
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.587
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.599
+!MESSAGE ProjectRegistryRefreshJob finished 12ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.600
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.629
+!MESSAGE Started org.eclipse.buildship.core 30ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.630
+!MESSAGE LoadingGradleVersionJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:24.663
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:25.194
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:25.694
+!MESSAGE Workspace initialized in 1062ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:25.716
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:25.720
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:25.733
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=true}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:25.735
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.497
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.797
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.798
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.801
+!MESSAGE Validated 1. Took 293 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.833
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.855
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.858
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:26.860
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:34.654
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:34.720
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:34.721
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:34.722
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:34.723
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:47.748
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:47.754
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:47.763
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:47.764
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:47.764
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:47.765
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:47.769
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:48.198
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:48.198
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:48.199
+!MESSAGE Validated 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:51.293
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:51.294
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:51.300
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:51.320
+!MESSAGE Reconciled 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:51.813
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:51.813
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:51.814
+!MESSAGE Validated 1. Took 43 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:52.199
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:52.266
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:52.267
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:52.267
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:52.268
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.114
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.115
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.121
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.122
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.122
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.123
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.136
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.443
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.443
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.447
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.447
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.448
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.448
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.510
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.936
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.937
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.937
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.938
+!MESSAGE Validated 1. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.938
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.942
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.942
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.943
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.943
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:57.955
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.117
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.118
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.136
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.276
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.277
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.295
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.565
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.565
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.568
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.569
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.569
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.569
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.584
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.977
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.978
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.982
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.983
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.984
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:58.984
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.043
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.321
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.321
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.324
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.337
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.659
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.678
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.679
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.681
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.682
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.687
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.687
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.704
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.704
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.907
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.921
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.922
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.922
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:58:59.923
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.052
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.053
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.055
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.056
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.057
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.057
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.071
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.491
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.491
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:00.492
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.391
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.392
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.399
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.400
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.401
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.401
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.443
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.715
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.716
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.718
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.719
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.719
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.720
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.784
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.895
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.895
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.897
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.898
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.898
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.899
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:01.961
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.052
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.054
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.056
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.057
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.057
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.058
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.069
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.209
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.210
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.213
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.214
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.215
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.215
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.282
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.369
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.370
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.372
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.373
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.373
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.374
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.386
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.802
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.802
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:02.803
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.007
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.007
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.009
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.073
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.392
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.413
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.413
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.413
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.414
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.469
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.470
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.472
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.473
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.473
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.474
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.486
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.905
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.906
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:03.906
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.019
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.020
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.024
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.025
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.025
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.026
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.039
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.324
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.325
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.327
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.328
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.329
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.330
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.340
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.508
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.509
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.512
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.513
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.513
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.514
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.523
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.944
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.944
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:04.945
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:05.597
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:05.598
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:05.600
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:05.649
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:05.998
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:06.018
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:06.019
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:06.020
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:06.020
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:06.122
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:06.122
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:06.123
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.755
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.756
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.758
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.772
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.841
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.843
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.844
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.844
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:07.846
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:08.241
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:08.242
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:08.242
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:13.900
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.158
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.159
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.165
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.166
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.166
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.167
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.178
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.178
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.596
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.596
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.597
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.877
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.878
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.881
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.895
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.917
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.919
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.920
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.921
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:15.922
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:16.314
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:16.315
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:16.315
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:17.589
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:17.590
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:17.595
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:17.595
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:17.596
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:17.596
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:17.661
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:18.076
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:18.077
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:18.077
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.493
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.493
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.496
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.504
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.505
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.505
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.505
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.506
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.509
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.926
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.926
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:20.927
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.223
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.224
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.227
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.228
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.229
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.229
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.290
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.711
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.711
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:21.712
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.124
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.124
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.127
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.127
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.128
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.128
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.139
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.552
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.553
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:22.553
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.366
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.367
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.370
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.370
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.371
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.371
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.383
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.797
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.798
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:23.800
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.160
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.161
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.163
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.175
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.563
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.584
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.585
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.585
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.586
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.603
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.604
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:24.604
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.925
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.926
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.929
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.942
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.971
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.973
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.973
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.974
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:26.974
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:27.354
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:27.355
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:27.355
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:29.201
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.199
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.199
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.216
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.268
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.269
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.269
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.270
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.280
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.281
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.288
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.288
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.289
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.289
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.298
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.710
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.711
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.718
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.718
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.719
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.721
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.729
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.730
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.731
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.731
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.732
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:30.783
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:31.249
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:31.250
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:31.250
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.218
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.829
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.830
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.845
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.890
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.891
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.891
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.891
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.901
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.901
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:34.918
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:35.056
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:35.057
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:35.058
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:35.059
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:35.332
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:35.332
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:35.332
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.503
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.504
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.506
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.520
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.635
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.642
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.642
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.643
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.643
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.937
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.937
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:37.938
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.128
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.129
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.132
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.133
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.133
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.133
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.145
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.556
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.556
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:38.557
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.099
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.100
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.101
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.115
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.301
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.312
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.313
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.313
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.314
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.531
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.531
+!MESSAGE 3 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.532
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.726
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.727
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.729
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.729
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.730
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.730
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:39.741
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:40.159
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:40.159
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:40.160
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.230
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.231
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.233
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.234
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.235
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.235
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.246
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.599
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.600
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.601
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.610
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.611
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.611
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.611
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.612
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.613
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.688
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.688
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.690
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.698
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.698
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.699
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.699
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.699
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.704
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.890
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.891
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.893
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.897
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.897
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.898
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.898
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.898
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:43.906
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.050
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.051
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.052
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.056
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.057
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.057
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.058
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.058
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.108
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.523
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.524
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.524
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.636
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.637
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.639
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.640
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.640
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.641
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.641
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.642
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.702
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.992
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.993
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.994
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.999
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:44.999
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.000
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.000
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.000
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.006
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.151
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.152
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.153
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.154
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.154
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.155
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.167
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.353
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.353
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.355
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.359
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.360
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.360
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.360
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.361
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.368
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.449
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.450
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.451
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.456
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.457
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.458
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.458
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.458
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.466
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.533
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.534
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.535
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.540
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.540
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.541
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.541
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.541
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.550
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.965
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.965
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:45.966
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.726
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.726
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.729
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.732
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.733
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.733
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.733
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.734
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:53.744
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.160
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.160
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.160
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.196
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.196
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.198
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.202
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.202
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.203
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.203
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.203
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.210
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.285
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.286
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.287
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.291
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.292
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.292
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.293
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.293
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.349
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.444
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.444
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.446
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.450
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.450
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.451
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.451
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.451
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.459
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.924
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.924
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:54.925
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.456
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.457
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.459
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.460
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.461
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.461
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.472
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.890
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.890
+!MESSAGE 1 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 19:59:59.890
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.024
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.024
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.027
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.027
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.028
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.028
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.040
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.507
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.507
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.507
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.561
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.562
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.573
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.573
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.573
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.574
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.578
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.991
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.992
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:04.992
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:10.863
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:10.864
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:10.866
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:10.867
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:10.867
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:10.867
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:10.878
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:11.340
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:11.340
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:11.340
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:14.911
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:14.911
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:14.914
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:14.915
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:14.915
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:14.916
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:14.926
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.259
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.259
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.261
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.275
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.500
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.511
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.512
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.513
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.513
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.548
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.548
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.550
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.550
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.551
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.551
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.551
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.555
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.562
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.979
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.979
+!MESSAGE 2 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:15.980
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:25.610
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:26.844
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:29.183
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.493
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.494
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.509
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.552
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.552
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.553
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.553
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.564
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.565
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.598
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.718
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.719
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.719
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:30.720
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:31.012
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:31.013
+!MESSAGE 1 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:31.013
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.331
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.331
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.350
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.350
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.350
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.351
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.395
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.807
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.808
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:00:36.808
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.639
+!MESSAGE >> document/definition
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.701
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.701
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.767
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.772
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.772
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.773
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:21.774
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:22.180
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:22.180
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:22.190
+!MESSAGE begin problem for /Parrot.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:22.190
+!MESSAGE 0 problems reported for /Parrot.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:01:22.190
+!MESSAGE Validated 2. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.076
+!MESSAGE >> document/codeLens
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.076
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.082
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.082
+!MESSAGE >> codeLens/resolve
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.146
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.610
+!MESSAGE begin problem for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.610
+!MESSAGE 0 problems reported for /ProjectConfig.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.648
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.648
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.656
+!MESSAGE begin problem for /Parrot.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.656
+!MESSAGE 0 problems reported for /Parrot.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:03:37.657
+!MESSAGE Validated 3. Took 58 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 20:06:05.275
+!MESSAGE >> document/definition
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-06-04 21:56:10.882
+!MESSAGE >> document/didClose
