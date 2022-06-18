@@ -103,21 +103,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
+# Set custom aliases
+[ -f ~/.zsh/aliases ] && source ~/.zsh/aliases
+
 # Starship settings
 eval "$(starship init zsh)"
 
-# Pure settings: https://github.com/sindresorhus/pure
-#autoload -U promptinit; promptinit
-#prompt pure
-
 # Fuzzy file search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# set Java 11 JDK
-#export JAVA_HOME="/usr/local/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
-#export PATH="$JAVA_HOME/bin:$PATH"
-#export PATH="$JAVA_HOME/bin:$PATH"
-#export PATH="/usr/local/opt/tomcat@9/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

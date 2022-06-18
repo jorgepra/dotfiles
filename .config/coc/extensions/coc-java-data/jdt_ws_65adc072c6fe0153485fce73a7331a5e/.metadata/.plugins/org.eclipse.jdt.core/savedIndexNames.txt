@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/Users/thordog/.config/coc/extensions/coc-java-data/jdt_ws_65adc072c6fe0153485fce73a7331a5e/.metadata/.plugins/org.eclipse.jdt.core
-3462260813.index
-3842426239.index
-1865797976.index

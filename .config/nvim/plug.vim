@@ -18,11 +18,11 @@ Plug 'vim-airline/vim-airline'
 " Fugitive: git commands
 Plug 'tpope/vim-fugitive'
 " Vim-gutter: shows a git diff in the file with a sign column
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 " Emmet
 "Plug 'mattn/emmet-vim'
 " highlight colors
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+"Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " css3 syntax highlight
 "Plug 'hail2u/vim-css3-syntax'
 " Syntax hightlight for .js
@@ -40,5 +40,4 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
 "Grahql
 "Plug 'jparise/vim-graphql'
-
 call plug#end()

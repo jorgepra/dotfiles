@@ -1,7 +1,11 @@
 {
-  "codeLens.enable": true,
   "java.referencesCodeLens.enabled": true,
-  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok1_18_24.jar",
+  "java.codeGeneration.generateComments": true,
+  "java.completion.guessMethodArguments": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.signatureHelp.enabled": true,
+  "java.format.onType.enabled": true,
   "suggest.floatEnable": true,
   "diagnostic.messageTarget": "float",
   "signature.target": "float",
