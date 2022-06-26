@@ -30,12 +30,12 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
 " start terminal in insert mode
-au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+"au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
 " open terminal on ctrl+;
 " uses zsh instead of bash
-function! OpenTerminal()
- split term://zsh
- resize 8
-endfunction
-nnoremap <c-n> :call OpenTerminal()<CR>
+"function! OpenTerminal()
+" split term://zsh
+" resize 8
+"endfunction
+"nnoremap <c-n> :call OpenTerminal()<CR>

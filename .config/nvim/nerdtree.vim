@@ -9,10 +9,8 @@ let g:NERDTreeStatusline = ''
 nnoremap <silent> <C-b> :NERDTreeToggle<CR> 
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" Start NERDTree when Vim starts with a directory argument.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+" Mirror the NERDTree before showing it. This makes it the same on all tabs.
+nnoremap <C-n> :NERDTreeMirror<CR>:NERDTreeFocus<CR>
 
 
 " NERDTree git plugin settings
@@ -75,5 +73,7 @@ let g:WebDevIconsDefaultFileSymbolColor = s:blue " sets the color for files that
 
 " NerdTree DevIcons Settings
 " --------------------------
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+set guifont=DroidSansMono\ Nerd\ Font\ 11
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1

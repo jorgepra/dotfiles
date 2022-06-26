@@ -158,7 +158,7 @@ source <sfile>:h/nerdtree.vim
 
 " Airline Settings
 " ----------------
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
 " GitGutter Settings
 " ------------------
@@ -176,7 +176,7 @@ source <sfile>:h/fzf.vim
 
 " Coc Settings
 " -----------------
-let g:coc_global_extensions = ['coc-actions', 'coc-snippets', 'coc-java']
+let g:coc_global_extensions = ['coc-actions', 'coc-snippets', 'coc-java','coc-html']
 source <sfile>:h/coc.vim
 
 "}}}
