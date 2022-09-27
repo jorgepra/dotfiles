@@ -3,6 +3,7 @@ if not status_ok then
   return
 end
 
+
 local setup = {
   plugins = {
     marks = true, -- shows a list of your marks on ' and `
@@ -54,7 +55,7 @@ local setup = {
     height = { min = 4, max = 25 }, -- min and max height of the columns
     width = { min = 20, max = 50 }, -- min and max width of the columns
     spacing = 3, -- spacing between columns
-    align = "center", -- align columns left, center or right
+    align = "left", -- align columns left, center or right
   },
   ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
   hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
@@ -371,3 +372,11 @@ which_key.setup(setup)
 which_key.register(mappings, opts)
 which_key.register(vmappings, vopts)
 which_key.register(m_mappings, m_opts)
+
+--vim.api.nvim_set_hl(10, "WhichKeyFloat", { ctermfg = "NONE", ctermbg = "NONE" })
+-- TODO try vim.cmd
+-- [vim.api.nvim_create_autocmd(
+-- 	{ "BufWinEnter" },
+-- 	{ pattern = "*", command = [[highlight WhichKeyFloat ctermfg=none ctermbg=none]] }
+-- ) 
+-- ]

@@ -1,7 +1,6 @@
-print("hello lsp signatura")
 local status_ok, signature = pcall(require, "lsp_signature")
 if not status_ok then
-  print('status not ok lsp signature')
+  vim.notify("lsp_signature is not loaded")
   return
 end
 

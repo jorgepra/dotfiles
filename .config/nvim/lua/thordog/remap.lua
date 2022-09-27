@@ -1,5 +1,4 @@
 local nnoremap = require("thordog.keymap").nnoremap
-local cnoremap = require("thordog.keymap").cnoremap
 
 -- Explorer
 nnoremap("<leader>pv", "<cmd>Ex<CR>")

@@ -1,18 +1,18 @@
 local status_ok, telescope = pcall(require, "telescope")
 if not status_ok then
+  print("telescope is not loaded")
+  print("")
   return
 end
 
 local actions = require "telescope.actions"
---telescope.load_extension "media_files"
 local icons = require "thordog.icons"
 
 telescope.setup {
   defaults = {
-
     prompt_prefix = icons.ui.Telescope .. " ",
     selection_caret = " ",
-    path_display = { "smart" },
+    --path_display = { "smart" },
     file_ignore_patterns = {
       ".git/",
       "target/",
@@ -41,6 +41,7 @@ telescope.setup {
       "env/",
       "gradle/",
       "node_modules/",
+      "packer_compiled.lua",
       "%.pdb",
       "%.dll",
       "%.class",
@@ -155,8 +156,8 @@ telescope.setup {
       theme = "dropdown",
     },
     find_files = {
-      --theme = "dropdown",
-      --previewer = false,
+      theme = "dropdown",
+      previewer = false,
     },
     buffers = {
       theme = "dropdown",
@@ -168,7 +169,7 @@ telescope.setup {
       show_moon = true,
     },
     colorscheme = {
-      -- enable_preview = true,
+       enable_preview = true,
     },
     lsp_references = {
       theme = "dropdown",
@@ -195,13 +196,5 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
-  },
-  extensions = {
-    media_files = {
-      -- filetypes whitelist
-      -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-      filetypes = { "png", "webp", "jpg", "jpeg" },
-      find_cmd = "rg", -- find command (defaults to `fd`)
-    },
   },
 }

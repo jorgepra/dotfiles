@@ -1,7 +1,6 @@
-print('hello null-ls.lua')
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
 if not null_ls_status_ok then
-  print('status no ok null-ls.lua')
+  vim.notify("null-ls is not loaded")
   return
 end
 

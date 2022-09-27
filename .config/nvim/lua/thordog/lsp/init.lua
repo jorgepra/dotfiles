@@ -1,7 +1,7 @@
-print("hola lsp init")
 M = {}
 local status_ok, _ = pcall(require, "lspconfig")
 if not status_ok then
+  vim.notify("lspconfig is not loaded")
   return
 end
 
@@ -32,6 +32,7 @@ require("thordog.lsp.null-ls")
 
 local l_status_ok, lsp_lines = pcall(require, "lsp_lines")
 if not l_status_ok then
+  vim.notify("lsp_lines is not loaded")
   return
 end
 

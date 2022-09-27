@@ -171,7 +171,8 @@ local right_pad = {
 
 local left_pad_alt = {
 	function()
-		return " "
+		--return " "
+    return hl_str("", "SLSep")
 	end,
 	padding = 0,
 	color = function()
@@ -181,7 +182,8 @@ local left_pad_alt = {
 
 local right_pad_alt = {
 	function()
-		return " "
+		--return " "
+    return hl_str(")", "SLSep")
 	end,
 	padding = 0,
 	color = function()

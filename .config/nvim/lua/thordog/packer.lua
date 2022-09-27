@@ -35,12 +35,15 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Color Themes
-  use {"overcache/NeoSolarized", commit = "b94b1a9ad51e2de015266f10fdc6e142f97bd617"}
+  --use {"overcache/NeoSolarized", commit = "b94b1a9ad51e2de015266f10fdc6e142f97bd617"}
+  use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
   --use "lunarvim/onedarker.nvim"
   --use "lunarvim/darkplus.nvim"
 
   -- Lua Development
-  use {"nvim-lua/plenary.nvim", commit = "31807eef4ed574854b8a53ae40ea3292033a78ea"}
   use {"nvim-lua/popup.nvim", commit = "b7404d35d5d3548a82149238289fa71f7f6de4ac"}
   use {"folke/lua-dev.nvim", commit = "f5c31936fe06fcbeb59b98f69f74f9c2f91abaec"}
   --use "christianchiarulli/lua-dev.nvim"
@@ -55,7 +58,7 @@ return packer.startup(function(use)
   --use {"simrat39/symbols-outline.nvim", commit = ""}
   --use "b0o/SchemaStore.nvim"
   --use "j-hui/fidget.nvim"
-  use "lvimuser/lsp-inlayhints.nvim"
+  use {"lvimuser/lsp-inlayhints.nvim", commit = "3652df1dffe57b40ee8c1665d41d3215dae71859"}
   -- use "simrat39/inlay-hints.nvim"
   use {"https://git.sr.ht/~whynothugo/lsp_lines.nvim", commit = "dbfd8e96ec2696e1ceedcd23fd70e842256e3dea"}
 
@@ -72,25 +75,28 @@ return packer.startup(function(use)
   use { "tzachar/cmp-tabnine", commit = "1a8fd2795e4317fd564da269cc64a2fa17ee854e", run = "./install.sh" }
   -- Snippet
   use {"L3MON4D3/LuaSnip", commit = "a82d84ae5433cf2af16124123999bff91e8f9e47"} --snippet engine TODO
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use {"rafamadriz/friendly-snippets" , commit = "e5a16f9346e1fa24147d6d23460ca9b41528ab7e"}
 
   -- Syntax/Treesitter
-  --use {"nvim-treesitter/nvim-treesitter", commit = "fb4ad06a23caf49a9a6543fa59eb382a2e24280f"} -- color syntax 
+  use {"nvim-treesitter/nvim-treesitter", commit = "fb4ad06a23caf49a9a6543fa59eb382a2e24280f"} -- color syntax 
+  use {"JoosepAlviste/nvim-ts-context-commentstring", commit="4d3a68c41a53add8804f471fcc49bb398fe8de08"}
 
   -- Marks
-  --use "christianchiarulli/harpoon"
+  --use "christianchiarulli/harpoon" TODO
   --use "MattesGroeger/vim-bookmarks" TODO
 
   -- Fuzzy finder / Telescope
-  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', commit = "b79cd6c88b3d96b0f49cb7d240807cd59b610cd8" }
-  use "nvim-telescope/telescope-media-files.nvim"
+  use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.0', commit = "b79cd6c88b3d96b0f49cb7d240807cd59b610cd8",
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
   --use "tom-anders/telescope-vim-bookmarks.nvim" TODO
 
   -- Editing support
   use {"windwp/nvim-autopairs", commit = "0a18e10a0c3fde190437567e40557dcdbbc89ea1"}
 
   -- Keybinding
-  use "folke/which-key.nvim"
+  use {"folke/which-key.nvim", commit= "bd4411a2ed4dd8bb69c125e339d837028a6eea71"}
 
   -- Java
   use {"mfussenegger/nvim-jdtls", commit = "782867324475c451427b7d972f886620da9c5167"}
@@ -100,10 +106,10 @@ return packer.startup(function(use)
   use {"rcarriga/nvim-dap-ui", commit = "225115ae986b39fdaffaf715e571dd43b3ac9670"}-- TODO
   --use "ravenxrz/DAPInstall.nvim"
 
-  -- status
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-    commit = "9076378ac1c53684c4fbfcf34b1277018c15c233"
-  }
+  -- Status Line
+  use {'kyazdani42/nvim-web-devicons'}
+  use {'nvim-lualine/lualine.nvim', commit = "9076378ac1c53684c4fbfcf34b1277018c15c233"}
+
+  -- Comment
+  use {"numToStr/Comment.nvim", commit = "80e7746e42fa685077a7941e9022308c7ad6adf8"}
 end)
