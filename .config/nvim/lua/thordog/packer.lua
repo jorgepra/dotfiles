@@ -37,7 +37,7 @@ return packer.startup(function(use)
   -- Color Themes
   --use {"overcache/NeoSolarized", commit = "b94b1a9ad51e2de015266f10fdc6e142f97bd617"}
   use {
-    'svrana/neosolarized.nvim',
+    'svrana/neosolarized.nvim', commit = "4e514a1678c01c6ce4b4c1e0fb9d5cd55a7d4d79",
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
   --use "lunarvim/onedarker.nvim"
@@ -52,7 +52,7 @@ return packer.startup(function(use)
   use {"neovim/nvim-lspconfig", commit = "abaf5fb6c496ecc9a19de1c2fbdf87a905138023" }
   use {"williamboman/mason.nvim", commit = "1355e3af9b79c9126bdef0b842e8d9a56c9da755"}
   use {"williamboman/mason-lspconfig.nvim", commit = "d9365e72afb2f876a62cd3cade555dc1a95031d9"}
-  use {"jose-elias-alvarez/null-ls.nvim" , commit = "9d1f8dc1c8984e30efd8406aceba53dfadeaadbd"}-- for formatters and linters
+  use {"jose-elias-alvarez/null-ls.nvim" , commit = "deba57c14aaccd26b5c4bf60912d549ddcdeba9f"}-- for formatters and linters
   use {"ray-x/lsp_signature.nvim", commit = "e65a63858771db3f086c8d904ff5f80705fd962b"}
   use {"SmiteshP/nvim-navic", commit = "94bf6fcb1dc27bdad230d9385da085e72c390019"}
   --use {"simrat39/symbols-outline.nvim", commit = ""}
@@ -68,7 +68,7 @@ return packer.startup(function(use)
   use {"hrsh7th/cmp-path", commit = "447c87cdd6e6d6a1d2488b1d43108bfa217f56e1"} -- path completions
   use {"hrsh7th/cmp-cmdline", commit = "9c0e331fe78cab7ede1c051c065ee2fc3cf9432e"} -- cmdline completions
   use {"saadparwaiz1/cmp_luasnip", commit = "a9de941bcbda508d0a45d28ae366bb3f08db2e36"} -- snippet completions
-  use {"hrsh7th/cmp-nvim-lsp", commit = "affe808a5c56b71630f17aa7c38e15c59fd648a8"}
+  use {"hrsh7th/cmp-nvim-lsp", commit = "59224771f91b86d1de12570b4070fe4ad7cd1eeb"}
   use {"hrsh7th/cmp-emoji", commit = "19075c36d5820253d32e2478b6aaf3734aeaafa0"}
   use {"hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21"}
   --use {"onsails/lspkind.nvim", commit = "57e5b5dfbe991151b07d272a06e365a77cc3d0e7"}
@@ -78,7 +78,7 @@ return packer.startup(function(use)
   use {"rafamadriz/friendly-snippets" , commit = "e5a16f9346e1fa24147d6d23460ca9b41528ab7e"}
 
   -- Syntax/Treesitter
-  use {"nvim-treesitter/nvim-treesitter", commit = "fb4ad06a23caf49a9a6543fa59eb382a2e24280f"} -- color syntax 
+  use {"nvim-treesitter/nvim-treesitter", commit = "69388e84c34d40c3d5c7d2f310db13276f2179e1"} -- color syntax 
   use {"JoosepAlviste/nvim-ts-context-commentstring", commit="4d3a68c41a53add8804f471fcc49bb398fe8de08"}
 
   -- Marks

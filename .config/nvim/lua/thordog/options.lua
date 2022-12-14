@@ -51,13 +51,13 @@ vim.opt.formatoptions:append({ "r" })
 -- cursor highlight
 -----------------------------------------------------------
 
-vim.cmd [[
-  augroup CursorLine
-    autocmd!
-    autocmd InsertLeave,WinEnter * set cursorline 
-    autocmd InsertEnter,WinLeave * set nocursorline 
-  augroup end
-]]
+--vim.cmd [[
+--  augroup CursorLine
+--    autocmd!
+--    autocmd InsertLeave,WinEnter * set cursorline 
+--    autocmd InsertEnter,WinLeave * set nocursorline 
+--  augroup end
+--]]
 -- vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
 
 vim.g.netrw_browse_split = 0

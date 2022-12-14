@@ -9,7 +9,8 @@ if not status_cmp_ok then
 end
 
 M.capabilities.textDocument.completion.completionItem.snippetSupport = true
-M.capabilities = cmp_nvim_lsp.update_capabilities(M.capabilities)
+--M.capabilities = cmp_nvim_lsp.update_capabilities(M.capabilities) -- JP 13/12/22
+M.capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
 
 M.setup = function()
   local icons = require("thordog.icons")
@@ -87,7 +88,7 @@ M.on_attach = function(client, bufnr)
   attach_navic(client, bufnr)
 
   if client.name == "tsserver" then
-    require("lsp-inlayhints").on_attach(bufnr, client)
+    require("lsp-inlayhints").on_attach(client, bufnr)
   end
 
   if client.name == "jdt.ls" then
